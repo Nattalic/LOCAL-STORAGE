@@ -1,0 +1,42 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2{
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 15px;
+}
+
+
+/* Forms */
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+}
