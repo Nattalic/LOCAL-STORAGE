@@ -18,14 +18,15 @@
     console.log(perfilGuardado)
 
     // Mostrar los datos en el div con id="perfil"
-    const perfilDiv = document.getElementById("perfil")
+    const perfilDiv = document.getElementById("contenido-perfil")
     perfilDiv.innerHTML = `
-        <h1>${perfilGuardado.nombre}</h1>
+        
         <img src="${perfilGuardado.foto}" alt="Foto de ${perfilGuardado.nombre}">
-        <p>Edad: ${perfilGuardado.edad}</p>
-        <p>Email: ${perfilGuardado.email}</p>
+        <p> <strong> Nombre: </strong> ${perfilGuardado.nombre}</p>
+        <p> <strong> Edad:</strong> ${perfilGuardado.edad}</p>
+        <p> <strong> Email: </strong> ${perfilGuardado.email}</p>
         <h2>Hobbies:</h2>
         <ul>
-            ${perfilGuardado.hobbies.map(hobby => `<li>${hobby}</li>`).join('')}
+            ${perfilGuardado.hobbies.map(hobby => `<li> ✅ ${hobby}</li>`).join('')}
         </ul>
     `
