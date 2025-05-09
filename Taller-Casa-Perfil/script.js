@@ -5,7 +5,7 @@
       edad: 23,
       email: "juanperez@gmail.com",
       foto: "https://randomuser.me/api/portraits/men/3.jpg",
-      hobbies: ["Jugar Fortnite", "Programar", "Estar con mi michi"]
+      hobbies: ["✅ Jugar Fortnite", "✅ Programar", "✅ Estar con mi michi"]
     };
 
     // Almacenar el objeto en localStorage como cadena JSON
@@ -26,7 +26,12 @@
         <p> <strong> Edad:</strong> ${perfilGuardado.edad}</p>
         <p> <strong> Email: </strong> ${perfilGuardado.email}</p>
         <h2>Hobbies:</h2>
-        <ul>
-            ${perfilGuardado.hobbies.map(hobby => `<li> ✅ ${hobby}</li>`).join('')}
-        </ul>
-    `
+        <ul id= "lista-hobbies"></ul>
+        `
+
+        const ul = document.getElementById("lista-hobbies")
+        for (let i = 0 ; i < perfilGuardado.hobbies.length; i++) {
+            const li = document.createElement ("li")
+            li.textContent = perfilGuardado.hobbies[i]
+            ul.appendChild(li)
+        }
